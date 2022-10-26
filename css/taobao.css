@@ -1,0 +1,54 @@
+#u1{
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+#u2{
+    width: 30px;
+    height: 30px;
+    margin-top: 2px;
+}
+#u3{
+    width: 30px;
+    height: 30px;
+    margin-top: 3px;
+}
+#u0{
+    font-size:large;
+    line-height:22px;
+    margin: 5px; 
+    width: 180px;
+    height: 20px;
+}
+.taobaojia{
+    width: 180px;
+    height: 150px;
+}
+.bought_shops{
+    margin: 20px;
+    margin-top: 12px;
+    color: rgb(11, 11, 11);
+    background: #fff;
+    border-radius: 10px;
+    border: 2px solid #f38a20;
+    position: absolute;
+}
+.shop_collect{
+    margin: 20px;
+    margin-top: 6px;
+    color: rgb(11, 11, 11);
+    background: #fff;
+    border-radius: 10px;
+    border: 2px solid #f38a20;
+    position: absolute;
+    
+}
+.item_collect{
+    margin: 20px;
+    margin-top: 10px;
+    color: rgb(11, 11, 11);
+    background: #fff;
+    border-radius: 8px;
+    border: 2px solid #f38a20;
+    position: absolute;
+}

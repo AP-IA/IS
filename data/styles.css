@@ -1,0 +1,70 @@
+.ax_default {
+    font-family:'Arial Normal', 'Arial';
+    font-weight:400;
+    font-style:normal;
+    font-size:13px;
+    letter-spacing:normal;
+    color:#333333;
+    vertical-align:none;
+    text-align:center;
+    line-height:normal;
+    text-transform:none;
+  }
+  .box_1 {
+  }
+  ._鍥剧墖_ {
+  }
+  ._涓€绾ф爣棰� {
+    font-family:'Arial Normal', 'Arial';
+    font-weight:bold;
+    font-style:normal;
+    font-size:32px;
+    text-align:left;
+  }
+  ._浜岀骇鏍囬 {
+    font-family:'Arial Normal', 'Arial';
+    font-weight:bold;
+    font-style:normal;
+    font-size:24px;
+    text-align:left;
+  }
+  ._涓夌骇鏍囬 {
+    font-family:'Arial Normal', 'Arial';
+    font-weight:bold;
+    font-style:normal;
+    font-size:18px;
+    text-align:left;
+  }
+  ._鍥涚骇鏍囬 {
+    font-family:'Arial Normal', 'Arial';
+    font-weight:bold;
+    font-style:normal;
+    font-size:14px;
+    text-align:left;
+  }
+  ._浜旂骇鏍囬 {
+    font-family:'Arial Normal', 'Arial';
+    font-weight:bold;
+    font-style:normal;
+    text-align:left;
+  }
+  ._鍏骇鏍囬 {
+    font-family:'Arial Normal', 'Arial';
+    font-weight:bold;
+    font-style:normal;
+    font-size:10px;
+    text-align:left;
+  }
+  ._鏂囨湰娈佃惤 {
+    text-align:left;
+  }
+  ._琛ㄥ崟鎻愮ず {
+    color:#999999;
+  }
+  ._琛ㄥ崟绂佺敤 {
+  }
+  ._绾挎 {
+  }
+  .icon {
+  }
+  textarea, select, input, button { outline: none; }

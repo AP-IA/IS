@@ -1,0 +1,125 @@
+#u0{
+    font-size:large;
+    line-height:22px;
+    margin: 5px; 
+    width: 180px;
+    height: 20px;
+}
+#u1{
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+#u2{
+    width: 30px;
+    height: 30px;
+    margin-top: 3px;
+}
+#u3{
+    width: 30px;
+    height: 30px;
+    margin-top: 3px;
+}
+#u4{
+    width: 30px;
+    height: 30px;
+    margin-top: 3px;
+}
+#u5{
+    width: 30px;
+    height: 30px;
+    margin-top: 3px;
+}
+#u6{
+    width: 30px;
+    height: 30px;
+    margin-top: 3px;
+}
+#u7{
+    width: 30px;
+    height: 30px;
+    margin-top: 3px;
+}
+#u8{
+    width: 30px;
+    height: 30px;
+    margin-top: 3px;
+}
+.lately{
+    margin: 10px;
+    margin-top: 12px;
+    margin-bottom: 1px;
+    color: rgb(11, 11, 11);
+    background: #fff;
+    border-radius: 10px;
+    border: 2px solid rgba(30, 188, 158, 1);
+
+}
+.blog{
+    margin: 10px;
+    margin-top: 12px;
+    margin-bottom: 1px;
+    color: rgb(11, 11, 11);
+    background: #fff;
+    border-radius: 10px;
+    border: 2px solid rgba(30, 188, 158, 1);
+
+}
+.download{
+    margin: 20px;
+    margin-top: 12px;
+    color: rgb(11, 11, 11);
+    background: #fff;
+    border-radius: 10px;
+    border: 2px solid rgba(30, 188, 158, 1);
+    position: absolute;
+}
+.askAnswer{
+    margin: 20px;
+    margin-top: 12px;
+    color: rgb(11, 11, 11);
+    background: #fff;
+    border-radius: 10px;
+    border: 2px solid rgba(30, 188, 158, 1);
+    position: absolute;
+}
+.askQuestion{
+    margin: 20px;
+    margin-top: 12px;
+    color: rgb(11, 11, 11);
+    background: #fff;
+    border-radius: 10px;
+    border: 2px solid rgba(30, 188, 158, 1);
+    position: absolute;
+}
+.communityPost{
+    margin: 20px;
+    margin-top: 12px;
+    color: rgb(11, 11, 11);
+    background: #fff;
+    border-radius: 10px;
+    border: 2px solid rgba(30, 188, 158, 1);
+    position: absolute;
+}
+.communityTopic{
+    margin: 20px;
+    margin-top: 12px;
+    color: rgb(11, 11, 11);
+    background: #fff;
+    border-radius: 10px;
+    border: 2px solid rgba(30, 188, 158, 1);
+    position: absolute;
+}
+.collect{
+    margin: 20px;
+    margin-top: 12px;
+    color: rgb(11, 11, 11);
+    background: #fff;
+    border-radius: 10px;
+    border: 2px solid rgba(30, 188, 158, 1);
+    position: absolute;
+}
+.CSDNjia{
+    width: 200px;
+    height: 300px;
+}

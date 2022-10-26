@@ -1,0 +1,246 @@
+.cnblog{
+    width:40px;
+    height: 40px;
+    border:0;
+    background:url( ../img/cnblog.png) no-repeat;
+    background-size: 100% 100%;
+}
+.github{
+    width:40px;
+    height: 40px;
+    border:0;
+    background:url( ../img/github.png) no-repeat;
+    background-size: 100% 100%;
+}
+.jianshu{
+    width:40px;
+    height: 40px;
+    border:0;
+    background:url( ../img/jianshu.png) no-repeat;
+    background-size: 100% 100%;
+}
+.oschina{
+    width:40px;
+    height: 40px;
+    border:0;
+    background:url( ../img/oschina.png) no-repeat;
+    background-size: 100% 100%;
+}
+.bilibili{
+    width:40px;
+    height: 40px;
+    border:0;
+    background:url( ../img/bilibili.png) no-repeat;
+    background-size: 100% 100%;
+}
+.zhihu{
+    width:40px;
+    height: 40px;
+    border:0;
+    background:url( ../img/zhihu.png) no-repeat;
+    background-size: 100% 100%;
+}
+.gitee{
+    width:40px;
+    height: 40px;
+    border:0;
+    background:url( ../img/gitee.png) no-repeat;
+    background-size: 100% 100%;
+}
+.wangyiyun{
+    width:40px;
+    height: 40px;
+    border:0;
+    background:url( ../img/wangyiyun.png) no-repeat;
+    background-size: 100% 100%;
+}
+.QQ{
+    width:40px;
+    height: 40px;
+    border:0;
+    background:url( ../img/QQ.png) no-repeat;
+    background-size: 100% 100%;
+}
+.CSDN{
+    width:40px;
+    height: 40px;
+    border:0;
+    background:url( ../img/csdn.png) no-repeat;
+    background-size: 100% 100%;
+}
+.taobao{
+    width:40px;
+    height: 40px;
+    border:0;
+    background:url( ../img/taobao.png) no-repeat;
+    background-size: 100% 100%;
+}
+.jingdong{
+    width:40px;
+    height: 40px;
+    border:0;
+    background:url( ../img/jingdong.png) no-repeat;
+    background-size: 100% 100%;
+}
+.weibo{
+    width:40px;
+    height: 40px;
+    border:0;
+    background:url( ../img/weibo.png) no-repeat;
+    background-size: 100% 100%;
+}
+.txsp{
+    width:40px;
+    height: 40px;
+    border:0;
+    background:url( ../img/txsp.png) no-repeat;
+    background-size: 100% 100%;
+}
+.mgtv{
+    width:40px;
+    height: 40px;
+    border:0;
+    background:url( ../img/mgtv.png) no-repeat;
+    background-size: 100% 100%;
+}
+.qiy{
+    width:40px;
+    height: 40px;
+    border:0;
+    background:url( ../img/qiy.png) no-repeat;
+    background-size: 100% 100%;
+}
+.sohu{
+    width:40px;
+    height: 40px;
+    border:0;
+    background:url( ../img/sohu.png) no-repeat;
+    background-size: 100% 100%;
+}
+.tieba{
+    width:40px;
+    height: 40px;
+    border:0;
+    background:url( ../img/tieba.png) no-repeat;
+    background-size: 100% 100%;
+}
+.jingdong{
+    width:40px;
+    height: 40px;
+    border:0;
+    background:url( ../img/jingdong.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.kuangjia{
+    width: 200px;
+    height: 200px;
+}
+#base{
+    width: 410px;
+    height: 380px;
+    border-radius: 10px;
+    border: 2px solid rgba(30, 188, 158, 1);
+}
+.link-top {
+    margin-left: 18px;
+    width: 90%;
+    height: 1px;
+    border-bottom: solid rgb(231 248 245) 2px;
+}
+
+#u1{
+    margin-top: 10px;
+    width: 410px;
+    height: 90px;
+}
+#u2{
+    width: 410px;
+    height: 90px;
+}
+#u3{
+    width: 410px;
+    height: 90px;
+}
+#u4{
+   
+    width: 410px;
+    height: 90px;
+}
+#title{
+    font-family: "苹方 中等", 苹方;
+    font-weight: 400;
+    font-size:larger;
+    font-style: normal;
+    color: rgb(170, 170, 170);
+    text-align: center;
+    display: block;
+    text-align: center;
+    display: block;
+    width: 410px;
+}
+#title1{
+    text-align: center;
+        display: block;
+        margin-top: 18px;
+        margin-right: 5px;
+        margin-left: 5px;
+        width: 95px;
+        bottom: 10px;
+        height: 72px;
+}
+#title2{
+    text-align: center;
+    display: block;
+    margin-top: 18px;
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 95px;
+    bottom: 10px;
+    height: 72px;
+}
+#title3{
+    text-align: center;
+        display: block;
+        margin-top: 18px;
+        margin-right: 5px;
+        margin-left: 5px;
+        width: 95px;
+        bottom: 10px;
+        height: 72px;
+}
+#title4{
+    text-align: center;
+    display: block;
+    margin-top: 18px;
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 95px;
+    bottom: 10px;
+    height: 72px;
+}
+input{
+    margin: 7px;
+    text-align: center;
+    display: block;
+ 
+}
+p{
+    font-family: "苹方 中等", 苹方;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(170, 170, 170);
+    text-align: center;
+    display: block;
+    /* position: absolute;
+    margin: 5px; */
+}
+span{
+    font-family: "苹方 中等", 苹方;
+    font-weight: 400;
+    font-size:larger;
+    font-style: normal;
+    color: rgb(170, 170, 170);
+    text-align: center;
+    display: block;
+}

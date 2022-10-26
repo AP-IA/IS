@@ -1,0 +1,607 @@
+{
+    "manifest_version":3,
+    "name":"info-spider",
+    "version":"1.0",
+    "description":"info-spider",
+    "icons":{
+        "128":"img/logo-50px.png",
+        "48":"img/logo-50px.png",
+        "16":"img/logo-50px.png"
+    },
+    "content_scripts": [
+
+
+
+          {
+            "matches": ["https://api.github.com/users/*/following"],
+            "js": [
+            "js/jquery.js",
+            "js/github/githubrun2.js"
+          ],
+          "run_at": "document_idle"
+          },
+          {
+            "matches": ["https://api.github.com/users/*/followers"],
+            "js": [
+            "js/jquery.js",
+            "js/github/githubrun3.js"
+          ],
+          "run_at": "document_idle"
+          },
+          {
+            "matches": ["https://api.github.com/users/*/repos"],
+            "js": [
+            "js/jquery.js",
+            "js/github/githubrun4.js"
+          ],   
+          "run_at": "document_idle"
+          },
+          {
+            "matches": ["https://api.github.com/users/*/received_events"],
+            "js": [
+            "js/jquery.js",
+            "js/github/githubrun5.js"
+          ], 
+          "run_at": "document_idle"
+          },
+          {
+            "matches": ["https://api.github.com/users/*"],
+            "exclude_globs":["https://api.github.com/users/*/following","https://api.github.com/users/*/followers"
+        ,"https://api.github.com/users/*/repos","https://api.github.com/users/*/received_events"],
+            "js": [
+            "js/jquery.js",
+            "js/github/githubrun1.js"
+          ],
+          "run_at": "document_idle"
+          },
+          
+
+
+          
+          {
+            "matches": ["https://www.cnblogs.com/"],
+            "js": [
+            "js/jquery.js",
+            "js/cnblog/cnblogrun0.js"
+          ],
+          "run_at": "document_end"
+          },
+          {
+            "matches": ["https://home.cnblogs.com/u/*/"],
+            "exclude_globs":["https://home.cnblogs.com/u/*/followers/",
+            "https://home.cnblogs.com/u/*/followees/"],
+            "js": [
+            "js/jquery.js",
+            "js/cnblog/cnblogrun1.js"
+          ],
+          "run_at": "document_end"
+          }, 
+          {
+            "matches": ["https://www.cnblogs.com/*/"],
+            "exclude_globs":["https://home.cnblogs.com/u/*/followers/"],
+            "js": [
+            "js/jquery.js",
+            "js/cnblog/cnblogrun2.js"
+          ],
+          "run_at": "document_end"
+          }, 
+
+
+
+
+          
+          {
+            "matches": ["https://www.jianshu.com/asimov/users/slug/*/public_notes"],
+            "js": [
+            "js/jquery.js",
+            "js/jianshu/jianshurun2.js"
+          ], 
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://www.jianshu.com/asimov/users/slug/*"],
+            "exclude_globs":["https://www.jianshu.com/asimov/users/slug/*/public_notes"],
+            "js": [
+            "js/jquery.js",
+            "js/jianshu/jianshurun1.js"
+          ], 
+          "run_at": "document_start"
+          },
+
+
+
+
+          {
+            "matches": ["https://my.oschina.net/u/*/"],
+            "exclude_globs":["https://my.oschina.net/u/*/followers/","https://my.oschina.net/u/*/following"],
+            "js": [
+            "js/jquery.js",
+            "js/oschina/oschinarun0.js"
+          ],
+          "run_at": "document_start"
+          }, 
+          {
+            "matches": ["https://my.oschina.net/"],
+            "js": [
+            "js/jquery.js",
+            "js/oschina/oschinarun0.js"
+          ],
+          "run_at": "document_start"
+          },
+
+
+
+
+          {
+            "matches": ["https://api.bilibili.com/x/relation/stat?vmid=*&jsonp=jsonp"],
+            "js": [
+            "js/jquery.js",
+            "js/bilibili/bilibilirun1.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://api.bilibili.com/x/space/acc/info?mid=*&jsonp=jsonp"],
+            "js": [
+            "js/jquery.js",
+            "js/bilibili/bilibilirun2.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://api.bilibili.com/x/space/arc/search?mid=*&jsonp=jsonp"],
+            "js": [
+            "js/jquery.js",
+            "js/bilibili/bilibilirun3.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://api.bilibili.com/x/space/bangumi/follow/list?type=1&follow_status=0&pn=*&ps=30&vmid=*&ts=*"],
+            "js": [
+            "js/jquery.js",
+            "js/bilibili/bilibilirun4.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+
+            "matches": ["https://api.bilibili.com/x/v3/fav/folder/created/list-all?up_mid=*&jsonp=jsonp"],
+            "js": [
+            "js/jquery.js",
+            "js/bilibili/bilibilirun5.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://api.bilibili.com/x/v3/fav/resource/list?media_id=*&pn=*&ps=20&keyword=&order=mtime&type=0&tid=0&platform=web&jsonp=jsonp"],
+            "js": [
+            "js/jquery.js",
+            "js/bilibili/bilibilirun5.1.js"
+          ],
+          "run_at": "document_start"
+          },
+          
+          
+          
+
+         
+          
+          {
+            "matches": ["https://www.zhihu.com/api/v4/me"],
+            "js": [
+            "js/jquery.js",
+            "js/zhihu/zhihurun0.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://www.zhihu.com/people/*"],
+            "exclude_globs":["https://www.zhihu.com/people/*/answers","https://www.zhihu.com/people/*/asks","https://www.zhihu.com/people/*/collections"],
+            "js": [
+            "js/jquery.js",
+            "js/zhihu/zhihurun1.js"
+          ],
+          "run_at": "document_start"
+          },
+          
+          {
+            "matches": ["https://www.zhihu.com/people/*/answers"],
+            "js": [
+            "js/jquery.js",
+            "js/zhihu/zhihurun2.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://www.zhihu.com/people/*/asks"],
+            "js": [
+            "js/jquery.js",
+            "js/zhihu/zhihurun3.js"
+          ],
+          "run_at": "document_start"
+          },
+          
+          {
+            "matches": ["https://www.zhihu.com/people/*/collections"],
+            "js": [
+            "js/jquery.js",
+            "js/zhihu/zhihurun4.js"
+          ],
+          "run_at": "document_start"
+          },
+         
+
+
+          {
+            "matches": ["https://gitee.com/api/v5/users/*"],
+            "exclude_globs":["https://gitee.com/api/v5/repos/*/fe-daily-question/issues"],
+            "js": [
+            "js/jquery.js",
+            "js/gitee/giteerun1.js"
+          ],
+          "run_at": "document_start"
+          },
+          
+          {
+            "matches": ["https://gitee.com/api/v5/repos/*/fe-daily-question/issues"],
+            "js": [
+            "js/jquery.js",
+            "js/gitee/giteerun2.js"
+          ],
+          "run_at": "document_start"
+          },
+
+
+          {
+            "matches": ["http://music.163.com/api/user/playlist/?offset=0&limit=100&uid=*"],
+            "js": [
+            "js/jquery.js",
+            "js/wangyiyun/wangyiyunrun1.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://music.163.com/api/v1/user/detail/*"],
+            "js": [
+            "js/jquery.js",
+            "js/wangyiyun/wangyiyunrun2.js"
+          ],
+          "run_at": "document_start"
+          },
+          
+
+
+
+
+          {
+            "matches": ["https://blog.csdn.net/community/home-api/v1/get-tab-total?username=*"],
+            "js": [
+            "js/jquery.js",
+            "js/csdn/csdnrun0.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://blog.csdn.net/community/home-api/v1/get-business-list?page=*&size=20&businessType=lately&noMore=false&username=*"],
+            "js": [
+            "js/jquery.js",
+            "js/csdn/csdnrun1.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://blog.csdn.net/community/home-api/v1/get-business-list?page=*&size=20&businessType=blog&orderby=&noMore=false&year=&month=&username=*"],
+            "js": [
+            "js/jquery.js",
+            "js/csdn/csdnrun2.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://blog.csdn.net/community/home-api/v1/get-business-list?page=*&size=20&businessType=download&noMore=false&username=*"],
+            "js": [
+            "js/jquery.js",
+            "js/csdn/csdnrun3.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://blog.csdn.net/community/home-api/v1/get-business-list?page=*&size=20&businessType=askAnswer&noMore=false&username=*"],
+            "js": [
+            "js/jquery.js",
+            "js/csdn/csdnrun4.js"
+          ],
+          "run_at": "document_start"
+          },
+          
+          {
+            "matches": ["https://blog.csdn.net/community/home-api/v1/get-business-list?page=*&size=20&businessType=askQuestion&noMore=false&username=*"],
+            "js": [
+            "js/jquery.js",
+            "js/csdn/csdnrun5.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://blog.csdn.net/community/home-api/v1/get-business-list?page=*&size=20&businessType=communityPost&noMore=false&username=*"],
+            "js": [
+            "js/jquery.js",
+            "js/csdn/csdnrun6.js"
+          ],
+          "run_at": "document_start"
+          },
+          
+          {
+            "matches": ["https://blog.csdn.net/community/home-api/v1/get-business-list?page=*&size=20&businessType=communityTopic&noMore=false&username=*"],
+            "js": [
+            "js/jquery.js",
+            "js/csdn/csdnrun7.js"
+          ],
+          "run_at": "document_start"
+          },
+          
+          {
+            "matches": ["https://blog.csdn.net/community/home-api/v1/get-favorites-created-list?page=*&size=20&noMore=false&blogUsername=*"],
+            "js": [
+            "js/jquery.js",
+            "js/csdn/csdnrun8.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://blog.csdn.net/community/home-api/v1/get-favorites-item-list?blogUsername=*&folderId=*&page=1&pageSize=400"],
+            "js": [
+            "js/jquery.js",
+            "js/csdn/csdnrun8.1.js"
+          ],
+          "run_at": "document_start"
+          },
+
+
+
+          {
+            "matches": ["https://favorite.taobao.com/nodejs/list_bought_shops_n.htm?ifAllTag=0&tab=0&categoryCount=0&type=0&tagName=&categoryName=&needNav=false&startRow=*&t=*"],
+            "js": [
+            "js/jquery.js",
+            "js/taobao/taobaorun1.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://favorite.taobao.com/nodejs/shop_collect_list_chunk.htm?ifAllTag=0&tab=0&categoryCount=0&tagName=&type=0&categoryName=&needNav=false&startRow=*&t=*"],
+            "js": [
+            "js/jquery.js",
+            "js/taobao/taobaorun2.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://favorite.taobao.com/nodejs/item_collect_chunk.htm?ifAllTag=0&tab=0&tagId=&categoryCount=0&type=0&tagName=&categoryName=&needNav=false&startRow=*&t=*"],
+            "js": [
+            "js/jquery.js",
+            "js/taobao/taobaorun3.js"
+          ],
+          "run_at": "document_start"
+          },
+          
+          {
+            "matches": ["https://v.qq.com/biu/u/history*"],
+            "js": [
+            "js/jquery.js",
+            "js/txsp/txsprun1.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://v.qq.com/biu/u/binge*"],
+            "js": [
+            "js/jquery.js",
+            "js/txsp/txsprun2.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://v.qq.com/biu/u/playlist*"],
+            "js": [
+            "js/jquery.js",
+            "js/txsp/txsprun3.js"
+          ],
+          "run_at": "document_start"
+          },
+
+
+          {
+            "matches": ["https://i.mgtv.com/my/watch*"],
+            "js": [
+            "js/jquery.js",
+            "js/mgtv/mgtvrun1.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://i.mgtv.com/my/looklist*"],
+            "js": [
+            "js/jquery.js",
+            "js/mgtv/mgtvrun2.js"
+          ],
+          "run_at": "document_start"
+          },
+          
+
+          {
+            "matches": ["https://www.iqiyi.com/u/record*"],
+            "js": [
+            "js/jquery.js",
+            "js/qiy/qiyrun1.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://www.iqiyi.com/u/fav*"],
+            "js": [
+            "js/jquery.js",
+            "js/qiy/qiyrun2.js"
+          ],
+          "run_at": "document_start"
+          },
+
+
+          {
+            "matches": ["https://weibo.com/u/*?tabtype=feed"],
+            "js": [
+            "js/jquery.js",
+            "js/weibo/weiborun1.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://weibo.com/u/page/fav/*"],
+            "js": [
+            "js/jquery.js",
+            "js/weibo/weiborun2.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://weibo.com/u/page/like/*"],
+            "js": [
+            "js/jquery.js",
+            "js/weibo/weiborun3.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://my.tv.sohu.com/i/history"],
+            "js": [
+            "js/jquery.js",
+            "js/sohu/sohurun1.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://my.tv.sohu.com/i/bookmark"],
+            "js": [
+            "js/jquery.js",
+            "js/sohu/sohurun2.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://tieba.baidu.com/f/like/mylike?v=1666784"],
+            "js": [
+            "js/jquery.js",
+            "js/tieba/tiebarun1.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://tieba.baidu.com/i/i/storethread"],
+            "js": [
+            "js/jquery.js",
+            "js/tieba/tiebarun2.js"
+          ],
+          "run_at": "document_start"
+          },
+
+
+
+          {
+            "matches": ["https://order.jd.com/center/list.action?search=0&d=2&s=4096"],
+            "js": [
+            "js/jquery.js",
+            "js/jingdong/jingdongrun1.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://order.jd.com/center/list.action?search=0&d=2021&s=4096"],
+            "js": [
+            "js/jquery.js",
+            "js/jingdong/jingdongrun2.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://order.jd.com/center/list.action?search=0&d=2020&s=4096"],
+            "js": [
+            "js/jquery.js",
+            "js/jingdong/jingdongrun3.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://order.jd.com/center/list.action?search=0&d=2019&s=4096"],
+            "js": [
+            "js/jquery.js",
+            "js/jingdong/jingdongrun4.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://order.jd.com/center/list.action?search=0&d=2018&s=4096"],
+            "js": [
+            "js/jquery.js",
+            "js/jingdong/jingdongrun5.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://order.jd.com/center/list.action?search=0&d=2017&s=4096"],
+            "js": [
+            "js/jquery.js",
+            "js/jingdong/jingdongrun6.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://order.jd.com/center/list.action?search=0&d=2016&s=4096"],
+            "js": [
+            "js/jquery.js",
+            "js/jingdong/jingdongrun7.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://order.jd.com/center/list.action?search=0&d=2015&s=4096"],
+            "js": [
+            "js/jquery.js",
+            "js/jingdong/jingdongrun8.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://order.jd.com/center/list.action?search=0&d=2014&s=4096"],
+            "js": [
+            "js/jquery.js",
+            "js/jingdong/jingdongrun9.js"
+          ],
+          "run_at": "document_start"
+          },
+          {
+            "matches": ["https://order.jd.com/center/list.action?search=0&d=3&s=4096"],
+            "js": [
+            "js/jquery.js",
+            "js/jingdong/jingdongrun10.js"
+          ],
+          "run_at": "document_start"
+          }
+          
+          
+        
+          
+          
+          
+          
+          
+         
+          ] ,
+    "action":{
+        "default_icon":"img/logo-50px.png",
+        "default_popup":"html/index.html"
+    },
+    "permissions":[
+        "storage",
+        "tabs"
+    ]
+}
